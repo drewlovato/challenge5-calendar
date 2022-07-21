@@ -1,6 +1,9 @@
 // Time and Date
-var date = moment();
-$("#currentDay").text(date.format("MMM Do, YYYY"));
+function setDate() {
+  // Time and Date
+  var currentDate = moment();
+  $("#currentDay").text(currentDate.format("MMM Do, YYYY"));
+}
 
 // Button Saves Information
 var savedMsg = document.getElementById("text-input-box");
@@ -15,10 +18,10 @@ function saveLastMsg() {
 
 function renderLastMsg() {
   // Use JSON.parse() to convert text to JavaScript object
-  var lastComment = JSON.parse(localStorage.getItem("input"));
+  var lastComment = JSON.parse(localStorage.getItem(savedMsg));
   // Check if data is returned, if not exit out of the function
   if (lastComment !== null) {
-    document.getElementById("msg").innerHTML = lastComment.comment;
+    document.getElementById(savedMsg.value).innerHTML = lastComment.comment;
   } else {
     return;
   }
@@ -28,11 +31,12 @@ saveButton.addEventListener("click", function (event) {
   event.preventDefault();
   saveLastMsg();
   renderLastMsg();
-  console.log("saved");
+  console.log(renderLastMsg.value);
 });
 
 // The init() function fires when the page is loaded
 function init() {
+  setDate();
   // When the init function is executed, the code inside renderLastGrade function will also execute
   renderLastMsg();
 }
