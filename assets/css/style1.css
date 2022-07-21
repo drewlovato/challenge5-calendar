@@ -1,0 +1,12 @@
+.container {
+    background-color: pink;
+    width: 100%;
+    height: 80px;
+}
+
+.container .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

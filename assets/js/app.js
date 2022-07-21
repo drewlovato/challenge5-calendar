@@ -1,43 +1,30 @@
-// Time and Date
+// TIME & DATE
 function setDate() {
-  // Time and Date
   var currentDate = moment();
   $("#currentDay").text(currentDate.format("MMM Do, YYYY"));
 }
 
-// Button Saves Information
-var savedMsg = document.getElementById("text-input-box");
-var saveButton = document.getElementById("save");
+var storageInput = document.querySelector("#storage");
+const text = document.querySelector(".text");
+const button = document.querySelector(".button");
+const storedInput = localStorage.getItem("textinput");
 
-function saveLastMsg() {
-  // Save related form data as an object
-
-  // Use .setItem() to store object in storage and JSON.stringify to convert it as a string
-  localStorage.setItem("savedMsg", JSON.stringify(savedMsg));
+if (storageInput) {
+  text.textContent = storedInput;
 }
 
-function renderLastMsg() {
-  // Use JSON.parse() to convert text to JavaScript object
-  var lastComment = JSON.parse(localStorage.getItem(savedMsg));
-  // Check if data is returned, if not exit out of the function
-  if (lastComment !== null) {
-    document.getElementById(savedMsg.value).innerHTML = lastComment.comment;
-  } else {
-    return;
-  }
-}
-
-saveButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  saveLastMsg();
-  renderLastMsg();
-  console.log(renderLastMsg.value);
+storageInput.addEventListener("input", (letter) => {
+  text.textContent = letter.target.value;
 });
+
+const saveToLocalStorage = () => {
+  localStorage.setItem("textinput", text.textContent);
+};
+
+button.addEventListener("click", saveToLocalStorage);
 
 // The init() function fires when the page is loaded
 function init() {
   setDate();
-  // When the init function is executed, the code inside renderLastGrade function will also execute
-  renderLastMsg();
 }
 init();
