@@ -5,9 +5,9 @@ function setDate() {
 }
 
 var storageInput = document.querySelector("#storage");
-const text = document.querySelector(".text");
-const button = document.querySelector(".button");
-const storedInput = localStorage.getItem("9:00");
+var text = document.querySelector(".text");
+var button = document.querySelector(".button");
+var storedInput = localStorage.getItem("9:00");
 
 // RENDER TEXT IF TEXT IS SUBMITTED
 if (true) {
