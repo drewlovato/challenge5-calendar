@@ -1,3 +1,43 @@
+.container {
+    width: 100%;
+}
+
+.container .time-row{
+    width: 100%;
+    height: 80px;
+    border-top: .6em;
+    background-color: rgb(109, 109, 189);
+    display: flex;
+    align-items: center;
+}
+
+.container .time-row .time-title {
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0 30px;
+    color: white;
+}
+
+.container .time-row .text {
+  width: 100%;
+  height: 80px;
+}
+
+.container .time-row .button {
+    justify-content: flex-end;
+    width: 80px;
+    height: 80px;
+    border: none;
+    background-color: rgb(93, 93, 163);
+    color: white;
+}
+
+
+
+
+
+
+
 /* body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -19,74 +59,74 @@ textarea {
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
-} */
+}
 
 .description {
-  white-space: pre-wrap;
-}
-
-.time-block {
-  text-align: center;
-  border-radius: 15px;
-  background-color: #ff6961;
-  height: 80px;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.time-block .msg {
-  /* white-space: pre-wrap; */
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-}
-
-#text-input-box{
-  justify-content: flex-end;
-  border-left: 1px solid black;
-  height: 70px;
-  width: 500px;
-}
-
-#save{
-  justify-content: flex-end;
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  height: 70px;
-  width: 70px;
-  background-color: #06aed5;
-  color: white;
-}
-
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
-}
-
-.past {
-  background-color: #d3d3d3;
-  color: white;
-}
-
-.present {
-  width: 100%;
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
+    white-space: pre-wrap;
+  }
   
-  background-color: #77dd77;
-  color: white;
-}
-
-.saveBtn {
+  .time-block {
+    text-align: center;
+    border-radius: 15px;
+    background-color: #ff6961;
+    height: 80px;
+    justify-content: flex-end;
+    align-items: center;
+  }
   
-}
-
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
-}
+  .time-block .msg {
+    white-space: pre-wrap;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  #text-input-box{
+    justify-content: flex-end;
+    border-left: 1px solid black;
+    height: 70px;
+    width: 500px;
+  }
+  
+  #save{
+    justify-content: flex-end;
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 70px;
+    width: 70px;
+    background-color: #06aed5;
+    color: white;
+  }
+  
+  .hour {
+    background-color: #ffffff;
+    color: #000000;
+    border-top: 1px dashed #000000;
+  }
+  
+  .past {
+    background-color: #d3d3d3;
+    color: white;
+  }
+  
+  .present {
+    width: 100%;
+    background-color: #ff6961;
+    color: white;
+  }
+  
+  .future {
+    
+    background-color: #77dd77;
+    color: white;
+  }
+  
+  .saveBtn {
+    
+  }
+  
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+  } */

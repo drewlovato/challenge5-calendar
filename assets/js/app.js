@@ -7,23 +7,26 @@ function setDate() {
 var storageInput = document.querySelector("#storage");
 const text = document.querySelector(".text");
 const button = document.querySelector(".button");
-const storedInput = localStorage.getItem("textinput");
+const storedInput = localStorage.getItem("9:00");
 
-if (storageInput) {
-  text.textContent = storedInput;
+// RENDER TEXT IF TEXT IS SUBMITTED
+if (true) {
+  text.value = storedInput;
 }
 
+// WHEN TEXT IS SUBMITTED SAVE TO LOCAL STORAGE
 storageInput.addEventListener("input", (letter) => {
   text.textContent = letter.target.value;
 });
 
 const saveToLocalStorage = () => {
-  localStorage.setItem("textinput", text.textContent);
+  localStorage.setItem("9:00", text.textContent);
 };
 
+// WHEN BUTTON IS CLICKED SAVE TO LOCALSTORAGE
 button.addEventListener("click", saveToLocalStorage);
 
-// The init() function fires when the page is loaded
+// RENDER DATE TO JUMBOTRON
 function init() {
   setDate();
 }
