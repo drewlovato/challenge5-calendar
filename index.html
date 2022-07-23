@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <!-- Date and Time Links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <!-- Bootstrap Link -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+
+    <!-- Font Links -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -32,65 +37,79 @@
       rel="stylesheet"
     />
 
+    <!-- Style Sheet Link -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <title>Work Day Scheduler</title>
   </head>
 
+  <!-- Start of header-->
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">WorkDay</h1>
+      <h1 class="display-3">WORKDAY</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="currentDay" class="time-display"></p>
     </header>
 
+    <!--Start of time brackets-->
+    <!-- Time Row 1 -->
     <div class="container">
       <div class="time-row">
         <p class="time-title">9 AM</p>
         <input id="s1" class="text" type="text" value="" />
         <button class="button"><i class="material-icons">save</i></button>
       </div>
+      <!-- Time Row 2 -->
       <div class="time-row">
         <p class="time-title">10 AM</p>
         <input id="s2" class="text" type="text" value="" />
         <button class="button"><i class="material-icons">save</i></button>
       </div>
+      <!-- Time Row 3 -->
       <div class="time-row">
         <p class="time-title">11 AM</p>
         <input id="s3" class="text" type="text" value="" />
         <button class="button"><i class="material-icons">save</i></button>
       </div>
+      <!-- Time Row 4 -->
       <div class="time-row">
         <p class="time-title">12 AM</p>
         <input id="s4" class="text" type="text" value="" />
         <button class="button"><i class="material-icons">save</i></button>
       </div>
+      <!-- Time Row 5 -->
       <div class="time-row">
         <p class="time-title">1 PM</p>
         <input id="s5" class="text" type="text" value="" />
         <button class="button"><i class="material-icons">save</i></button>
       </div>
+      <!-- Time Row 6 -->
       <div class="time-row">
         <p class="time-title">2 PM</p>
         <input id="s6" class="text" type="text" value="" />
         <button class="button"><i class="material-icons">save</i></button>
       </div>
+      <!-- Time Row 7 -->
       <div class="time-row">
         <p class="time-title">3 PM</p>
         <input id="s7" class="text" type="text" value="" />
         <button class="button"><i class="material-icons">save</i></button>
       </div>
+      <!-- Time Row 8 -->
       <div class="time-row">
         <p class="time-title">4 PM</p>
         <input id="s8" class="text" type="text" value="" />
         <button class="button"><i class="material-icons">save</i></button>
       </div>
+      <!-- Time Row 9 -->
       <div class="time-row">
         <p class="time-title">5 PM</p>
         <input id="s9" class="text" type="text" value="" />
         <button class="button"><i class="material-icons">save</i></button>
       </div>
     </div>
+
+    <!-- Script Documents -->
     <script src="./assets/js/app.js"></script>
   </body>
 </html>

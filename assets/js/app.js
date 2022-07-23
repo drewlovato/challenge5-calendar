@@ -1,8 +1,8 @@
 // time & Date
-function setDate() {
-  var currentDate = moment();
-  $("#currentDay").text(currentDate.format("MMM Do, YYYY"));
-}
+// function setDate() {
+var currentDate = moment();
+$("#currentDay").text(currentDate.format("MMM Do, YYYY"));
+// }
 
 // global parent of entire timerow slots
 var buttonParent = document.querySelector(".container");
@@ -28,10 +28,10 @@ document.querySelector("#s7").value = localStorage.getItem("3 PM");
 document.querySelector("#s8").value = localStorage.getItem("4 PM");
 document.querySelector("#s9").value = localStorage.getItem("5 PM");
 
-console.log(test);
+// console.log(test);
 
 // render date of jumbotron
-function init() {
-  setDate();
-}
-init();
+// function init() {
+//   setDate();
+// }
+// init();
