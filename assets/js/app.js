@@ -40,6 +40,18 @@ buttonParent.addEventListener("click", function (event) {
   console.log(event.target.previousElementSibling.value);
 });
 
+// function infoAll(event) {
+//   var finalOutPut = localStorage.getItem(
+//     event.path[1].children[0].innerText,
+//     event.target.previousElementSibling.value
+//   );
+// }
+
+document.querySelector("#s1").value = localStorage.getItem("9 AM");
+document.querySelector("#s2").value = localStorage.getItem("10 AM");
+
+console.log(test);
+
 // RENDER DATE TO JUMBOTRON
 function init() {
   setDate();
