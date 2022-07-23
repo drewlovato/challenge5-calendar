@@ -1,3 +1,26 @@
+body{
+  margin-bottom: 100px;
+}
+
+.jumbotron{
+  width: 100%;
+  text-align: center;
+  background-color: rgb(109, 109, 189);
+  border-radius: 0;
+  box-shadow: 1px 5px 8px rgb(56, 56, 98) ;
+}
+
+.jumbotron .display-3 {
+  font-family: 'Bebas Neue', cursive;
+  text-shadow: 1px 5px 8px rgb(56, 56, 98);
+  color: white;
+  kerning: 1em;
+}
+
+.jumbotron .lead {
+  color: rgb(152, 152, 255);
+  font-size: medium;
+}
 
 .container {
   width: 100%;
@@ -6,17 +29,21 @@
 .container .time-row{
   width: 100%;
   height: 80px;
-  border-top: .6em;
+  box-direction: none;
   background-color: rgb(109, 109, 189);
   display: flex;
   align-items: center;
 }
 
 .container .time-row .time-title {
-  align-items: center;
+  height: 80px;
+  width: 100px;
   margin-bottom: 0;
-  padding: 0 30px;
+  padding: 10px;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container .time-row .text {
@@ -26,11 +53,17 @@ height: 80px;
 
 .container .time-row .button {
   justify-content: flex-end;
-  width: 80px;
+  width: 100px;
   height: 80px;
   border: none;
   background-color: rgb(93, 93, 163);
   color: white;
+}
+
+.container .time-row .button:hover {
+  background-color: rgb(117, 117, 204);
+  color: white;
+  border: none;
 }
 
 

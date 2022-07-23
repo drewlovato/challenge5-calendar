@@ -1,36 +1,13 @@
-// TIME & DATE
+// time & Date
 function setDate() {
   var currentDate = moment();
   $("#currentDay").text(currentDate.format("MMM Do, YYYY"));
 }
 
-// var storageInput = document.querySelector("");
-// var text = document.querySelector(".t1, .t2");
-// var button = document.querySelector("button");
-
+// global parent of entire timerow slots
 var buttonParent = document.querySelector(".container");
 
-// RENDER TEXT IF TEXT IS SUBMITTED
-
-// WHEN TEXT IS SUBMITTED SAVE TO LOCAL STORAGE
-// storageInput.addEventListener("input", (letter) => {
-//   text.textContent = letter.target.value;
-// });
-
-// const saveToLocalStorage = () => {
-//   localStorage.setItem("9:00AM", text.textContent);
-//   localStorage.setItem("10:00AM", text.textContent);
-//   localStorage.setItem("11:00AM", text.textContent);
-//   localStorage.setItem("12:00AM", text.textContent);
-//   localStorage.setItem("1:00PM", text.textContent);
-//   localStorage.setItem("2:00PM", text.textContent);
-//   localStorage.setItem("3:00PM", text.textContent);
-//   localStorage.setItem("4:00PM", text.textContent);
-//   localStorage.setItem("5:00PM", text.textContent);
-// };
-
-// WHEN BUTTON IS CLICKED SAVE TO LOCALSTORAGE
-// button.addEventListener("click", saveToLocalStorage);
+// when button is clicked save to local storage
 buttonParent.addEventListener("click", function (event) {
   localStorage.setItem(
     event.path[1].children[0].innerText,
@@ -40,19 +17,20 @@ buttonParent.addEventListener("click", function (event) {
   console.log(event.target.previousElementSibling.value);
 });
 
-// function infoAll(event) {
-//   var finalOutPut = localStorage.getItem(
-//     event.path[1].children[0].innerText,
-//     event.target.previousElementSibling.value
-//   );
-// }
-
+// grab row class and submit value of that class (time)
 document.querySelector("#s1").value = localStorage.getItem("9 AM");
 document.querySelector("#s2").value = localStorage.getItem("10 AM");
+document.querySelector("#s3").value = localStorage.getItem("11 AM");
+document.querySelector("#s4").value = localStorage.getItem("12 AM");
+document.querySelector("#s5").value = localStorage.getItem("1 PM");
+document.querySelector("#s6").value = localStorage.getItem("2 PM");
+document.querySelector("#s7").value = localStorage.getItem("3 PM");
+document.querySelector("#s8").value = localStorage.getItem("4 PM");
+document.querySelector("#s9").value = localStorage.getItem("5 PM");
 
 console.log(test);
 
-// RENDER DATE TO JUMBOTRON
+// render date of jumbotron
 function init() {
   setDate();
 }
