@@ -21,8 +21,9 @@ body{
 }
 
 .jumbotron .lead {
-  color: rgb(152, 152, 255);
+  color: white;
   font-size: medium;
+  margin-bottom: 15px;
 }
 
 .jumbotron .time-display{
