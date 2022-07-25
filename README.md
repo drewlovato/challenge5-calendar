@@ -24,3 +24,5 @@ https://github.com/drewlovato/challenge5-calendar
 
 PUBLISHED LINK
 https://drewlovato.github.io/challenge5-calendar/
+
+![_Users_andrewlovato_code_challengesdirectory_challenge5-calendar_index html](https://user-images.githubusercontent.com/59673032/180678850-acba6d17-f891-4655-9d04-ab0f25ac1444.png)
